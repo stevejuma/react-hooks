@@ -1,5 +1,5 @@
-import { Component, useEffect, useState } from "./React";
-import { useFetcher } from "./useFetcher.ts";
+import { Component, useEffect, useState } from "../React";
+import { useFetcher } from "../hooks/useFetcher.ts";
 
 export const Jokes: Component = () => {
   const endpoint = "https://official-joke-api.appspot.com/jokes/";

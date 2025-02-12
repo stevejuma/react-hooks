@@ -1,6 +1,6 @@
-import { Component, useEffect, useState } from "./React";
-import pauseIcon from "./pause.svg?raw";
-import playIcon from "./play.svg?raw";
+import { Component, useEffect, useState } from "../React";
+import pauseIcon from "/pause.svg?raw";
+import playIcon from "/play.svg?raw";
 
 const Timer: Component = () => {
   const [seconds, setSeconds] = useState<number>(0);

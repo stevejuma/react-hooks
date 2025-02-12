@@ -201,7 +201,7 @@ button:focus-visible {
   animation: l16 1s infinite linear;
 }
 .loader::before,
-.loader::after {    
+.loader::after {
   content: "";
   grid-area: 1/1;
   margin: 2px;
@@ -210,13 +210,15 @@ button:focus-visible {
 }
 .loader::before {
   border-color: #f03355 #0000;
-  animation: inherit; 
-  animation-duration: .5s;
+  animation: inherit;
+  animation-duration: 0.5s;
   animation-direction: reverse;
 }
 .loader::after {
   margin: 8px;
 }
-@keyframes l16 { 
-  100%{transform: rotate(1turn)}
+@keyframes l16 {
+  100% {
+    transform: rotate(1turn);
+  }
 }

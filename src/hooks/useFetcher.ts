@@ -1,4 +1,4 @@
-import { useEffect, useState } from "./React";
+import { useEffect, useState } from "../React";
 type Options = { [key: string]: any };
 type ErrorMessage = string | null;
 

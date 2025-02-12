@@ -1,7 +1,7 @@
+import { Component, React, useEffect, useRef, useState } from "../React";
 import { Jokes } from "./Jokes";
-import { Component, React, useEffect, useRef, useState } from "./React";
 import Timer from "./Timer";
-import typescriptLogo from "./typescript.svg";
+import typescriptLogo from "/typescript.svg";
 import viteLogo from "/vite.svg";
 
 export const Counter: Component = () => {
