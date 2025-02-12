@@ -1,13 +1,3 @@
-## Install 
-
-* Checkout the repository and do an `npm i`
-* Run the app with `npm run dev`
-* Open the browser to the url displayed which should be `http://localhost:5173/` but 
-  could be different on your machine.
-
-If you have any issues, might be worth upgrading the version of node, but that shouldn't
-strictly be necessary. 
-
 ## Update Node Version
 * Ensure you have nvm installed to manage node versions, install it if it is missing with 
    * `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash`
@@ -33,3 +23,11 @@ since nvm is a sourced shell function, not an executable binary.
 
 ### Install Node v.20
 Install node v.20 with `nvm install 20`
+Enable it with `nvm use 20`
+
+## Install 
+
+* Checkout the repository and do an `npm i`
+* Run the app with `npm run dev`
+* Open the browser to the url displayed which should be `http://localhost:5173/` but 
+  could be different on your machine.
