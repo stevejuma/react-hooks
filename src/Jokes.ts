@@ -27,7 +27,7 @@ export const Jokes: Component = () => {
                     </div>
                 </div>
                 <div class="joke">
-                    ${response.loading ? '<span class="spinner" /> Loading...' : ""}
+                    ${response.loading ? '<span class="loader"></span> Loading...' : ""}
                     ${response.error ? `<span class="error">${response.error}</span>` : ""} 
                     ${
                       !response.loading && !response.error
