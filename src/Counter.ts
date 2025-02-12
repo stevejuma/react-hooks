@@ -1,4 +1,5 @@
-import { Component, React, useEffect, useRef, useState } from "./react";
+import { Jokes } from "./Jokes";
+import { Component, React, useEffect, useRef, useState } from "./React";
 import Timer from "./Timer";
 import typescriptLogo from "./typescript.svg";
 import viteLogo from "/vite.svg";
@@ -59,6 +60,10 @@ export const Counter: Component = () => {
       const timer = document.createElement("div");
       element.appendChild(timer);
       React.mount(Timer, timer);
+
+      const jokes = document.createElement("div");
+      element.appendChild(jokes);
+      React.mount(Jokes, jokes);
 
       return element;
     },

@@ -34,18 +34,18 @@ export const React = (function () {
           container,
         });
       }
-    
+
       activeComponent = componentsMap.get(component)!;
       activeComponent.hookIndex = 0;
       activeComponent.container = container;
       activeComponent.component = component;
       container.innerHTML = "";
       component(props).render(container);
-      console.log(component.name, activeComponent.hookStates)
+      console.log(component.name, activeComponent.hookStates);
     },
 
     useState<T>(
-      initialValue: T,
+      initialValue?: T,
     ): [T, (newValue: T | ((prevValue: T) => T)) => void] {
       if (!activeComponent)
         throw new Error("Hooks can only be called inside a component");

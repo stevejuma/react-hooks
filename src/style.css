@@ -99,12 +99,12 @@ button:focus-visible {
   margin-right: 5px;
 }
 
-.action[data-paused=true] svg {
-  color: #2196F3;
+.action[data-paused="true"] svg {
+  color: #2196f3;
 }
 
-.action[data-paused=false] svg {
-  color: #8BC34A;
+.action[data-paused="false"] svg {
+  color: #8bc34a;
 }
 
 @media (prefers-color-scheme: light) {
@@ -118,4 +118,74 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.container {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.fetch-url {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: not-allowed;
+}
+.joke-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+.joke-header .title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.seed-options {
+  display: flex;
+  gap: 10px;
+}
+.seed-options button {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.seed-options .seed {
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+}
+
+.joke {
+  min-height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.joke .error {
+  color: #f14d4d;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.joke-setup {
+  font-size: 17px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.joke-punchline {
+  font-style: italic;
+  font-size: 20px;
 }

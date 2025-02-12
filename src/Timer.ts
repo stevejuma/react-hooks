@@ -1,4 +1,4 @@
-import { Component, useEffect, useState } from "./react";
+import { Component, useEffect, useState } from "./React";
 import pauseIcon from "./pause.svg?raw";
 import playIcon from "./play.svg?raw";
 
@@ -9,7 +9,7 @@ const Timer: Component = () => {
   // useEffect to update the timer every second
   useEffect(() => {
     if (paused) {
-        return;
+      return;
     }
     const interval = setInterval(() => {
       setSeconds((prevSeconds) => prevSeconds + 1);
@@ -28,11 +28,11 @@ const Timer: Component = () => {
             </button>
         </div>
         `;
-        element
+      element
         .querySelector<HTMLButtonElement>("#paused")!
         .addEventListener("click", () => {
-            console.log('Paused', paused, !paused)
-            setPaused(!paused);
+          console.log("Paused", paused, !paused);
+          setPaused(!paused);
         });
     },
   };
